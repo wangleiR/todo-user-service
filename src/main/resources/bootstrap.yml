@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: userService
+  profiles:
+    active : dev
+  cloud:
+    config:
+      label: master
+      uri: http://config-service:8888
+  #    fail-fast: true
+
+#      server:
+#        git:
+#          url: https://github.com/wangleiR/springcloud-config.git
+#          search-paths: micro-service
+#          fail-fast: true
